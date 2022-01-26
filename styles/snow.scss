@@ -2,6 +2,7 @@
     overflow: hidden;
     margin: 0;
     padding: 0;
+    z-index: 50;
   }
   
   // Definition of snow length
@@ -12,6 +13,7 @@
   .g-snows {
     width: 100vw;
     height: 100vh;
+    z-index: 50;
     // background-color: purple;
   }
   
@@ -28,6 +30,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
+    z-index: 50;
     
     // Bases of random snows effect
     $snow-size-base: 30;
@@ -48,6 +51,7 @@
         animation-duration: abs(random($animate-speed-base) - random($animate-speed-base)) + $minimum-falling-speed + 0ms;
         animation-delay: abs(random($animate-delay-base)) + 0ms;
         filter: blur(abs(random($blur-base) - random($blur-base)) + 0px);
+        z-index: 50;
       }
     }
   } 
