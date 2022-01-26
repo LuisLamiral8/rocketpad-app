@@ -8,7 +8,6 @@ const Article = () => {
         <input id="search-btn" type="text" placeholder='Project name' />
         </div>
         <div className="cards-container">
-          <Card/>
         </div>
 
      </article>
