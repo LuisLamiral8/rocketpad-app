@@ -10,8 +10,10 @@ html{
   font-family: 'Roboto', sans-serif;
 }
 body{
+  // background: rgb(13,19,75);
+  // background: linear-gradient(0deg, rgba(13,19,75,1) 20%, rgba(5,8,27,1) 81%);
   background: rgb(13,19,75);
-  background: linear-gradient(0deg, rgba(13,19,75,1) 20%, rgba(5,8,27,1) 81%);
+background: linear-gradient(0deg, rgba(13,19,75,1) 17%, rgba(5,8,27,1) 58%);
   background-repeat: no-repeat;
   color:white;
   height:100%;
@@ -60,7 +62,7 @@ body{
   justify-content: space-between;
   z-index: 100;
   h5{
-    margin: 0 15px;
+    margin: 0 15px 0 15px;
     line-height: 27px;
     font-size: 22px;
     font-weight: 700;
@@ -90,211 +92,100 @@ body{
 .cards{
   width: 90%;
   margin: auto;
+  // background-color: rgb(121, 30, 30);
   display: flex;
+  flex-direction: column;
   max-height: 1440px;
   font-size: 22px;
   justify-content: center;
   z-index: 100;
-  // .input-container{
-  //   input{
-  //     font-size: 16px;
-  //     font-weight: 400;
-  //     height: auto;
-  //     padding: 20px 75px;
-  //     margin: 10px 15px 0 0;
-  //     background-color: transparent;
-  //     border: 1px solid #2f3550;
-  //     border-radius: 15px;
-  //   }
-  //   input::placeholder{
-  //     color: #d1e1ff;
-  //     text-align: left;
-  //   }
-  //   width: 100%;
-  //   display: flex;
-  //   height: 45px;
-  //   margin: 5px;
-  //   justify-content: flex-end;
-  //   margin-top: 20px;
-  //   margin-bottom: 10px;
-  // }
+  .input-container{
+    overflow: visible ;
+    input{
+      font-size: 16px;
+      font-weight: 400;
+      height: auto;
+      // padding: 23px 100px;
+      // margin: 30px 20px 0 0;
+      padding: 23px 100px;
+      margin: 30px 20px 0 0;
+      background-color: transparent;
+      border: 1px solid #2f3550;
+      border-radius: 15px;
+    }
+    input::placeholder{
+      color: #d1e1ff;
+      position: relative;
+      left: -50px;
+      // background: url("/searchicon.png") no-repeat scroll 00px 0px;
+
+
+
+    }
+    width: 100%;
+    display: flex;
+    height: 45px;
+    margin: 5px;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
   .cards-container{
     z-index: 100;
-    display: flex;
-    background-color: #242435;
-    flex-direction: row;
-    border-radius: 15px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 340px 340px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px;
     font-size: 20px;
     
-    width:100%;
-    max-width:705px;
-    min-width:320px;
+    // width:100%;
+    // max-width:705px;
+    // min-width:320px;
 
-    height:100%;
-    max-height:339px;
-    min-height:339px;
+    height:105vh;
 
-    .card{ 
-      z-index: 100;
-      width:100%;
-      height:339px;
-      display: flex;
-      flex-direction: column;
-      align-items:space-around;
-      justify-content: space-around;
-
-      .card_top-container{
-        display:flex;
-        
-        .card_img-container{
-          img{
-            margin: 15px 10px;
-          }
+    
+      }
+  .card-pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .pagination-buttons{
+      border-radius: 10px;
+      border: 1px solid #1d2249;
+      background-color: #191c3c ;
+      font-size: 14px;
+      padding: 0 10px;
+      line-height: 21px;
+      font-weight: 400;
+      button{
+        margin: 5px 3px;
+        padding: 15px 0;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 10px;
+        min-width: 50px;
+        border: none;
+        color: white;
+        transition: 250ms;
+        &:hover{
+          background-color: #685dd8;
         }
-        .card_info-container{
-          h5{
-
-             padding-bottom: 0;
-             background-image: linear-gradient(#00F260, #c42bdd, #0575e6, #fff);
-             color: transparent;
-             background-size: 150%;
-             background-position: -200%;
-             font-size: 30px;
-             animation: animationText 5s infinite alternate-reverse;
-             @keyframes animationText{
-               to{
-                 background-position: 100%;}}
-          }
-          .open-with{
-            display: flex;
-            flex-direction: column;
-            font-size: 12px;
-            a{
-              color: white;
-              text-decoration: none;
-            }
-            a:first-child{
-              color: #ff0000;
-              text-align: center;
-              background-color: #5b1b28;
-              padding: 0px 2px 2px 2px;
-              border-radius: 8px;
-              margin-bottom: 5px;
-            }
-            a:nth-child(2){
-              width: 3vw;
-
-              color: #d5a512;
-              text-align: center;
-              background-color: #594b2c;
-              padding: 2px 0;
-
-              border-radius: 8px;
-            }
-            .item-open{
-              font-weight: 900;
-              font-size: 15px;
-            }
-          }
-          
+        &:first-child{
+          padding: 15px 20px;
         }
-        
+        &:nth-child(5){
+          padding: 15px 20px;
         }
-        .card-description{
-          font-size: 16px;
-          padding-left: 25px;
+        &:nth-child(2){
+          background-color: #685dd8;
+        }
         }
       }
-      .card-swapInfo{
-        width:100%;
-          ul{
-            width:inherit;
-            display:flex;
-            justify-content:space-between;
-            align-items:space-around;
-            flex-direction:row;
-            font-size:12px;
-            color: #484850;
-            small:nth-child(1){
-              margin-left: 15px;
-            }
-            small:nth-child(3){
-              margin-right: 15px;
-            }
-            .swapinfo-small{
-              font-size: 12px;
-              font-weight: 400;
-              line-height: 16px;
-            }
-            .swapInfo-data{
-              color: white;
-              font-size: 12px;
-              font-weight: 700;
-              line-height: 16px;
-            }
-          }
-      }
 
-      .card-status{
-        div{
-
-          display:flex;
-          justify-content:space-around;
-          flex-direction:row;
-        }
-
-        .pp-card-progress{
-          position: relative;
-          height: 8px;
-          border-radius: 8px;
-          width: 100%;
-          background-color: rgb(255 255 255);
-          margin-top: 5px;
-          margin-bottom: 20px;
-
-          .progress{
-          
-            .progress-bar{
-              width:75%;
-              background-color:#685dd8;
-              display: -webkit-box;
-              display: -webkit-flex;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-              -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-              flex-direction: column;
-              -webkit-box-pack: center;
-              -webkit-justify-content: center;
-              -ms-flex-pack: center;
-              justify-content: center;
-              overflow: hidden;
-              color: #fff;
-              text-align: center;
-              white-space: nowrap;
-              background-color: #0d6efd;
-              -webkit-transition: width .6s ease;
-              -o-transition: width .6s ease;
-              transition: width .6s ease;
-            }
-            
-            // .progress-bar-animated{
-            //  // animation: 1s linear infinite progress-bar-stripes;
-            // }
-
-            .progress-bar-striped {
-              background-image: linear-gradient(
-                45deg
-                ,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-                    background-size: 1rem 1rem;
-                }
-                
-            }
-          }
-        }
-      }
-      
     }
+  }      

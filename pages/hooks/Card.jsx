@@ -11,10 +11,11 @@ const Card = ({ title, description, swapRate, cap, access, participants }) => {
                 <div className='card_info-container'>
                     <h2>{title}</h2>
                     <div className="social-media">
-                        <button>i</button>
-                        <button>f</button>
-                        <button>l</button>
-                        <button>c</button>
+                        {/* <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/1024px-Instagram_font_awesome.svg.png" alt="" width="14px" height="14px"/></button> */}
+                        <a><img src='/instagram.svg' alt="" width="13.5px" height="15px"/></a>
+                        <a><img src="/twitter.svg" alt="" width="13.5px" height="15px"/></a>
+                        <a><img src="/linkedin.svg" alt="" width="13.5px" height="15px"/></a>
+                        <a><img src="/codepen.svg" alt="" width="13.5px" height="15px"/></a>
                     </div>
                     <div className="open-with">
                     <a href="#"> <b className="item-open">⚬</b> Opens in TDA</a>
