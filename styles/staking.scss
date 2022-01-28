@@ -23,8 +23,9 @@
 
     }
 }
+
 .staking-container{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: center;
     width: 95%;
@@ -100,6 +101,7 @@
             .rewards-button{
                 border: none;
                 button{
+                    cursor: pointer;
                     background: linear-gradient(to right, #8b67f9 0%,#0c0e27 51%,#000);
                     margin: 0 10px;
                     color: white;
@@ -112,4 +114,40 @@
             }
         }
     }
+}
+// .active-tabs::after{
+//     button{
+
+//         content: "";
+//         display: flex;
+//         color: white;
+//         border-bottom:1px solid white;
+//     }
+// }
+.unstake-container{
+    display: none;
+    width: 45%;
+    height: 20vh;
+    border-radius: 15px;
+    margin: auto;
+    // background: rgb(35,41,104);
+    background: linear-gradient(0deg, rgba(35,41,104,0.3) 45%, rgba(61,69,165,1) 86%);
+    justify-content: center;
+    .unstake-alert_container{
+        display: flex;
+        flex-direction: row;
+        margin: 25px 100px;
+        h5{
+            font-family: Roboto, sans-serif;
+            text-align: center;
+            color: #ffff;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            padding: 5px;
+            font-weight: 600;
+        }
+    }
+}
+.active-content{
+    display: flex;
 }

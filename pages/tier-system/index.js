@@ -1,5 +1,4 @@
 import Navbar from '../components/Navbar'
-import Article from '../components/Article'
 import Navigation from '../components/Navigation.jsx'
 import Snow from '../components/Snow'
 import Footer from '../components/Footer'
@@ -14,6 +13,7 @@ export default function Home() {
       <Modal/>
       <Navbar/>
       <Navigation current="Tier System"/>
+      
       <Footer/>
       <Snow/>
     </div>
