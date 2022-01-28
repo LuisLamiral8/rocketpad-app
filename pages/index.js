@@ -3,13 +3,15 @@ import Article from './components/Article'
 import Navigation from './components/Navigation.jsx'
 import Snow from './components/Snow'
 import Footer from './components/Footer'
-import Head from 'next/head'
+import Modal from './components/Modal'
+
 // Lupa del input
 // Cards: Icono, Barrita, ajustar tamaños
+// Footer: Iconos
 export default function Home() {
   return (
     <div>
-      <Head/>
+      <Modal/>
       <Navbar/>
       <Navigation/>
       <Article/>

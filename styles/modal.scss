@@ -1,0 +1,112 @@
+/*---*/
+
+.modal{
+	width: 100%;
+    height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+    opacity: 0;
+    z-index: 150;
+    visibility: hidden;
+    .modal-container{
+        position: absolute;
+        width: 500px;
+        height: 450px;    
+        background: white;
+        margin-top: 250px;
+        box-shadow: 1px 7px 25px rgba(0,0,0,0.6);
+        transition: all 500ms ease;
+        // position: relative;
+        
+        transform: translateY(-30%);
+        .close-btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .content{
+            width: 100%;
+            .modal-info{
+                display: flex;
+                align-items: center;
+                height: 200px;
+                flex-direction: column;
+                background: rgb(9,8,19);
+                background: linear-gradient(0deg, rgba(9,8,19,1) 0%, rgba(52,46,108,1) 29%, rgba(67,60,139,1) 50%, rgba(95,85,196,1) 100%); 
+                h3{
+                    
+                    margin: 15px 0;
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-weight: 700;
+                }
+                img{
+                    margin: 25px 0;
+                }
+                p{
+                    margin-bottom: 7px;
+                }
+            }
+            .connect-btns{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                button{
+                    margin: 10px 0;
+                    border: none;
+                    div{
+                        overflow: visible;
+                        width: 450px;
+                        height: 50px;
+                        border-radius: 1rem;
+                        border: 1px solid rgb(225, 225, 225);
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: #0d086a;
+                        flex-direction: row;
+                        p{
+                            margin: 10px 10px;
+                            color: white;
+                            font-size: 22px;
+                            line-height: 25px;
+                            font-weight: 300;
+                        }
+                        img{
+                            margin: 10px 10px;
+
+                        }
+
+                    }
+                }
+            }
+            }
+    }
+}
+#btn-modal{
+    display: none;
+}
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+} 
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+}
+
+
+
+// @media only screen and (min-width:320px) and (max-width:768px){
+// 	.contenedor{
+// 		width: 95%;
+// 	}
+// }
