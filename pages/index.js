@@ -13,7 +13,9 @@ export default function Home() {
     <div>
       <Modal/>
       <Navbar/>
-      <Navigation/>
+      <Navigation 
+      current="Project"
+      />
       <Article/>
       <Footer/>
       <Snow/>

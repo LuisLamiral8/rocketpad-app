@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items:space-around;
     justify-content: space-around;
-
+    
     .card_top-container{
       display:flex;
       
@@ -36,16 +36,18 @@
           font-size: 1em;
           flex-direction: row;
           margin: 15px 8px;
-          a{
+          .socialMedia-btn{
             cursor: pointer;
+            background: linear-gradient(45deg, #685dd8, #002A8F);
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
             img{
-              padding: 0 5px;
-              border-radius: 100%;
-              width: 30px;
-              height: 30px;
-              margin: 0 5px;
-              color: white;
-              background: linear-gradient(45deg, #685dd8, #002A8F);
+              display: flex;
+              width: 90%;
+              height: 90%;
+              padding:  5px 4px 4px 6px;
             }
           }
         }

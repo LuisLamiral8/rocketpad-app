@@ -1,16 +1,16 @@
 import React from 'react';
-
+import Link from 'next/link'
 const Navbar = () => {
   return(
     <nav className="navbar">
         <img src="https://app.rocketpad.community/images/logo/logo-white1.png" alt="" height="35px"/>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><Link href="https://rocketpad.community/">Home</Link></li>
             <li><label for="btn-modal" class="lbl-modal">Connect Wallet</label></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Staking</a></li>
-            <li><a href="#">Tier system</a></li>
-        </ul>
+            <li><Link href="/">Projects</Link></li>
+            <li><Link href="/staking">Staking</Link></li>
+            <li><Link href="/tier-system" >Tier system</Link></li>
+       </ul>
     </nav>
       ) 
 };
