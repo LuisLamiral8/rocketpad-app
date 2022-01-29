@@ -2,7 +2,7 @@ import React from 'react';
 const Navigation = ({current}) => {
   return(
       <header className="navigation">
-            <h5>Project</h5>
+            <h5>{current}</h5>
           <ul>
             <li><a href="#">Home</a></li>
             <li> {">"} </li>
