@@ -1,0 +1,11 @@
+.tiersystem-main_container{
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    .tiers-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
