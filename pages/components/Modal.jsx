@@ -2,12 +2,12 @@ import React from 'react';
 
 const Modal = () => {
   return (
-  <div class="modal-component">
+  <div className="modal-component">
         <input type="checkbox" id="btn-modal"/>
-        <div class="modal">
-            <div class="modal-container">
-                <label className="close-btn"for="btn-modal">X</label>
-                <div class="content">
+        <div className="modal">
+            <div className="modal-container">
+                <label className="close-btn"htmlFor="btn-modal">X</label>
+                <div className="content">
                     <div className="modal-info">
                     <h3>Connect your Wallet</h3>
                     <img width="200px" height="33px" src="https://app.rocketpad.community/images/logo/logo-white1.png" alt="" />

@@ -23,12 +23,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <img src="https://app.rocketpad.community/images/logo/logo-white1.png" alt="" height="35px" />
-      <ul class="ul">
+      <ul className="ul">
         <li><Link href="https://rocketpad.community/">Home</Link></li>
-        <li><label for="btn-modal" class="lbl-modal">Connect Wallet</label></li>
+        <li><label htmlFor="btn-modal" className="lbl-modal">Connect Wallet</label></li>
         <li><Link href="/">Projects</Link></li>
-        <li for="staking"><Link id="staking" href="/staking">Staking</Link></li>
-        <li for="tier"><Link id="tier" href="/tier-system" >Tier system</Link></li>
+        <li><Link id="staking" href="/staking">Staking</Link></li>
+        <li ><Link id="tier" href="/tier-system" >Tier system</Link></li>
       </ul>
       <button onClick={() => responsiveNav()} className="ham" type="button">
         <span className="br-1"></span>
