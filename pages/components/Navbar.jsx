@@ -8,14 +8,14 @@ const Navbar = () => {
     const bars = document.querySelectorAll(".ham span")
 
     const responsiveNav = () => {
-      // ul.classList.toggle("navActive");
-      // bars.forEach(child => { child.classList.toggle('animated') });
+      ul.classList.toggle("navActive");
+      bars.forEach(child => { child.classList.toggle('animated') });
 
-      if(ul.classList.contains("navActive")){
-        ul.classList.remove("navActive");
-      }else{
-        ul.classList.add("navActive");
-      }
+      // if(ul.classList.contains("navActive")){
+      //   ul.classList.remove("navActive");
+      // }else{
+      //   ul.classList.add("navActive");
+      // }
     }
 
 
