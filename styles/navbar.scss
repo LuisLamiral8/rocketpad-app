@@ -55,11 +55,30 @@
                 box-shadow: none;
                 background-color: #292938;
             }
-            a{
-                color: white;
-                text-decoration: none;
+        }
+        a{
+            cursor: pointer;
+            margin: 20px 10px;
+            color: white;
+            text-decoration: none;
+            background-color: #685dd8 ;
+            border-radius: 10px;
+            letter-spacing: 0.5px;
+            padding: 8px 20px 8px 20px;
+            width: auto;
+            box-shadow: -1px 1px 14px 4px #685dd8;
+            text-align: center;
+            font-weight: 400;
+            border: none;
+            font-size: 14px;
+            list-style-type: none;
+            transition: all 350ms;
+            &:hover{
+                box-shadow: none;
+                background-color: #292938;
             }
         }
+        
     }
 }
 @media (max-width:1200px){
@@ -93,6 +112,11 @@
             width: 50%;
             text-align: center;
             padding: 15px;
+            }
+            a{
+                width: 50%;
+                text-align: center;
+                padding: 15px;
             }
         }
         .ul.navActive{

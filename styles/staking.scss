@@ -100,15 +100,21 @@
         .rewards{
             .rewards-button{
                 border: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 button{
                     cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    flex-direction: row;
                     background: linear-gradient(to right, #8b67f9 0%,#0c0e27 51%,#000);
                     margin: 0 10px;
                     color: white;
                     border: 1px #8b67f9 solid; 
                     border-radius: 20px;
-                    // width: 30%;
-                    padding: 0.25rem 15%;
+                    padding: 10px 10%;
                     box-shadow: 1px 0 2px #ff1baf5d;
                 }
             }
@@ -151,7 +157,20 @@
 .active-content{
     display: flex;
 }
-
+@media (max-width: 1000px){
+    .unstake-alert_container{
+        margin: 25px 50px !important;
+    }
+}
+@media (max-width: 900px){
+    .rewards{
+        .rewards-button{
+            button{
+                margin: 0 5px !important;
+            }
+        }
+    }
+}
 @media (max-width: 844px) {
     .staking-container{
         flex-direction: column;
@@ -168,6 +187,27 @@
         .staked-info{
             margin-top:50px;
             width: 95%;
+        }
+    }
+    .unstake-alert_container{
+        margin: 25px 0px !important;
+    }
+    .rewards-button{
+        button{
+            margin: 0 10px !important;
+        }
+    }
+}
+@media (max-width:520px){
+    .unstake-container{
+        height: 30vh;
+        .unstake-alert_container{
+            flex-direction: column !important;
+            img{
+                margin: auto;
+                width: 60px;
+                
+            }
         }
     }
 }
