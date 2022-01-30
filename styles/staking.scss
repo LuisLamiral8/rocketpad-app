@@ -131,7 +131,7 @@
     border-radius: 15px;
     margin: auto;
     // background: rgb(35,41,104);
-    background: linear-gradient(0deg, rgba(35,41,104,0.3) 45%, rgba(61,69,165,1) 86%);
+    background: radial-gradient(farthest-side at 50% 45%, rgba(67, 76, 181, 0.8), rgba(67, 76, 181, 0));
     justify-content: center;
     .unstake-alert_container{
         display: flex;
@@ -150,4 +150,24 @@
 }
 .active-content{
     display: flex;
+}
+
+@media (max-width: 844px) {
+    .staking-container{
+        flex-direction: column;
+        margin-top:250px;
+
+        .to-stake{
+            width: 95%;
+            
+            li{
+                margin:0 !important;
+                margin:15px !important;
+            }
+        }
+        .staked-info{
+            margin-top:50px;
+            width: 95%;
+        }
+    }
 }

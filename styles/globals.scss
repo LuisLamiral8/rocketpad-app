@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   z-index: 100;
-  overflow-x: hidden;
 }
 
 html{
@@ -116,8 +115,8 @@ body{
     // max-width:705px;
     // min-width:320px;
 
-    height:105vh;
-
+    height:100%;
+    margin-bottom:150px;
     
       }
   .card-pagination{
@@ -164,15 +163,28 @@ body{
   @media (max-width: 1000px) {
     .cards-container{
       display: grid;
-      grid-template-columns: 45vw 45vw;
-      grid-template-rows: 380px 380px; 
+      grid-template-columns: 45vw 45vw !important;
+      grid-template-rows: 380px 380px !important; 
     }
   }
   
   @media (max-width: 768px){
     .cards-container{
-      grid-template-columns: 50%;
-      grid-template-rows: 400px
+      grid-template-columns: 100% !important;
+      grid-template-rows: 400px !important;
+    }
+
+    .input-container{
+      width: 100% !important;
+      input{
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 425px){
+    .input-container{
+      padding-top:15px;
     }
   }
     
