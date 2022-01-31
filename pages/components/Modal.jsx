@@ -1,5 +1,5 @@
 import React from 'react';
-
+import NamiConnect from '../hooks/NamiConnect';
 const Modal = () => {
   return (
   <div className="modal-component">
@@ -22,7 +22,7 @@ const Modal = () => {
                             <img width="30px" height="30px" src="https://app.rocketpad.community/images/wallet/deadalus.png" alt="" />
                             </div></button>
                         <button><div>
-                            <p>Nami</p>
+                            <NamiConnect/>
                             <img width="30px" height="30px" src="https://app.rocketpad.community/images/wallet/nami.jpeg" alt="" />
                             </div></button>
                     </div>

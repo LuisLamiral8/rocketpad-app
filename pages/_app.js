@@ -8,11 +8,16 @@ import '../styles/tiersystem.scss'
 import '../styles/tiers.scss'
 import '../styles/snow.scss'
 
+import { ChakraProvider} from "@chakra-ui/react"
+import { StoreProvider } from 'easy-peasy';
+import store from '../store/store';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
+    <StoreProvider store={store}>
     <Component {...pageProps} />
+    </StoreProvider>
     </>
     );
 }
