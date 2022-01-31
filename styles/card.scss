@@ -11,10 +11,48 @@
     
     .card_top-container{
       display:flex;
-      
-      .card_img-container{
-        img{
-          margin: 15px 10px;
+      .icon-box{
+        width: 70px;
+        height: 70px;
+        padding: 12px;
+        margin-right: 8px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &::before{
+          content: "";
+          background-image: url(../public/circle.png);
+          background-position: center center;
+          background-size: cover;
+          width: 90px;
+          height: 90px;
+          position: absolute;
+          transform: translate(-50%, -50%);
+          transform-origin: center center;
+          -webkit-animation: spin 6s infinite forwards linear;
+          animation: spin 6s infinite forwards linear;
+        }
+        
+        span{
+          object-fit: cover;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          padding: 5px;
+          overflow: hidden;
+          
+          img{
+            width: 100%;
+            object-fit: contain;
+          }
+          }
         }
       }
       .card_info-container{
@@ -68,7 +106,7 @@
             margin-bottom: 5px;
           }
           a:nth-child(2){
-            width: 3vw;
+            width: 40px;
 
             color: #d5a512;
             text-align: center;
@@ -131,8 +169,10 @@
           margin: 0 10px;
           font-size: 12px;
           color: #484850;
+          margin-left:5%;
         }
         p{
+          margin-right:5%;
           font-size: 12px;
           color: #484850;
           b{
@@ -143,16 +183,14 @@
         .pp-card-progress{
           position: relative;
           height: 8px;
-          border-radius: 8px;
-          width: 100%;
+          border-radius: 5px;
+          width: 90%;
           background-color: rgb(255 255 255);
-          margin-top: 5px;
-          margin-bottom: 20px;
-
+          margin: 5px auto 20px auto;
           .progress{
-          
+            width:100%;
             .progress-bar{
-              width:75%;
+              border-radius:15px;
               background-color:#685dd8;
               display: -webkit-box;
               display: -webkit-flex;
@@ -175,11 +213,17 @@
               -webkit-transition: width .6s ease;
               -o-transition: width .6s ease;
               transition: width .6s ease;
+
+              &:nth-child(1){
+                width:65%;
+              }
             }
             
-            // .progress-bar-animated{
-            //  // animation: 1s linear infinite progress-bar-stripes;
-            // }
+            .progress-bar-animated{
+              background: #685dd8;
+              -webkit-animation: 1s linear infinite progress-bar-stripes;
+              animation: 1s linear infinite progress-bar-stripes;
+            }
 
             .progress-bar-striped {
               background-image: linear-gradient(
@@ -192,4 +236,24 @@
               
           }
         }
-}
+
+        @keyframes spin {
+          0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+          }
+          100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes progress-bar-stripes
+        {
+          0%{
+            background-position-x:1rem
+          }
+        100%{
+          background-position-x:0rem;
+        }
+      }

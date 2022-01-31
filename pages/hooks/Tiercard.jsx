@@ -4,7 +4,7 @@ const Tiercard = ({image, tier, name, minimum, maximum}) => {
   return (
     <div className="tier-card_main_container">
         <div className="card-img_container">
-        <img src={image} alt="" width="55px" height="100px" />
+        <img className="card-logo" src={image} alt="" width="55px" height="100px" />
         </div>
         <div className="card-info_container">
         <h3>Tier {tier}</h3>

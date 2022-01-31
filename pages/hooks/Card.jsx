@@ -5,7 +5,11 @@ const Card = ({ title, description, swapRate, cap, access, participants }) => {
         <div className="card">
             <div className="card_top-container">
                 <div className='card_img-container'>
-                    <img src="https://app.rocketpad.community/images/PLSPAD.jpg" alt="" width="55px" height="55px" />
+                    <div className="icon-box">
+                        <span>
+                           <img className="card_img-logo" src="https://app.rocketpad.community/images/PLSPAD.jpg" alt="" width="55px" height="55px" />
+                        </span>
+                    </div>
                 </div>
 
                 <div className='card_info-container'>
