@@ -1,11 +1,13 @@
 .tier-card_main_container{
     width: 300px;
     height: 370px;
-    border: 2px solid #9e9fa7;
+    border: 1px solid #9e9fa7;
+    box-shadow: inset 0px 0px 4px 1px #fff;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     margin: 25px 15px;
+    z-index: 100;
     img{
         position: relative;
         float: right;
@@ -26,6 +28,6 @@
             color: #acacac;
             margin-bottom: 45px;
             font-size: 1.7rem;
-}
+    }
     }
 }
