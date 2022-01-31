@@ -7,10 +7,13 @@ const Navbar = () => {
     const ul = document.querySelector(".ul");
     const bars = document.querySelectorAll(".ham span")
 
+    //navActive
+    //bars
+
+    
     const responsiveNav = () => {
       ul.classList.toggle("navActive");
       bars.forEach(child => { child.classList.toggle('animated') });
-
       // if(ul.classList.contains("navActive")){
       //   ul.classList.remove("navActive");
       // }else{

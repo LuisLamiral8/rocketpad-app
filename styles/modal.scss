@@ -42,6 +42,7 @@
                 flex-direction: column;
                 background: rgb(9,8,19);
                 background: linear-gradient(0deg, rgba(9,8,19,1) 0%, rgba(52,46,108,1) 29%, rgba(67,60,139,1) 50%, rgba(95,85,196,1) 100%); 
+                height:50%;
                 h3{
                     
                     margin: 15px 0;
@@ -61,9 +62,21 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                .nami-connect{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:80%;
+                    height: 60px;
+                    background-color: #1d2249;
+                    .button-nami_wallet{
+                    color:white;
+                    background: transparent !important;
+                    }
+                }
                 button{
                     cursor: pointer;
-                    margin: 10px 0;
                     border: none;
                     div{
                         overflow: visible;

@@ -60,13 +60,8 @@ const ConnectWallet = (props) => {
             <Button
                 isDisabled={isLoading}
                 isLoading={isLoading}
-                colorScheme="teal"
-                rounded="lg"
-                position="relative"
-                overflow="hidden"
-                py="0.5"
                 onClick={async () => {
-                    setIsLoading(true);
+                    setIsLoading(false);
                     if (!(await checkStatus(toast, connected))) {
                         setIsLoading(false);
                         return;
@@ -80,7 +75,7 @@ const ConnectWallet = (props) => {
                     setIsLoading(false);
                 }}
             >
-                <Box zIndex="1" fontSize="sm">Connect Wallet</Box>
+                <button className="button-nami_wallet">Connect Nami Wallet</button>
             </Button>
         );
 };
@@ -107,6 +102,8 @@ const Ellipsis = ({ connected }) => {
                     <span>{connected}</span>
                 </MiddleEllipsis>
             </div>
+
+            
         )
     );
 };
@@ -169,7 +166,7 @@ const WrongNetworkToast = async (toast) => {
         // eslint-disable-next-line react/display-name
         render: () => (
             <Box
-                background="purple.400"
+                background="purple.100"
                 color="white"
                 px={6}
                 py={3}
