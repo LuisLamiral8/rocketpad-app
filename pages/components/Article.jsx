@@ -10,7 +10,8 @@ const Article = () => {
           
         <div className="cards-container">
           <Card 
-          title= "Token1"
+          title= "Token 1"
+          to= "/tokens/token1"
           description= "Project in line to be loaded into the Rocketpad"
           swapRate= "1 USDT = 2010.405 METAV"
           cap= "10000"
@@ -18,16 +19,18 @@ const Article = () => {
           participants= "351"
           />
           <Card 
-          title= "Token2"
+          title= "Token 2"
+          to= "/tokens/token2"
           description= "Project in line to be loaded into the Rocketpad"
           swapRate= "1 USDT = 2010.405 METAV"
           cap= "10000"
-          access= "Private"
+          access= "Public"
           participants= "351"
           />
           
           <Card 
-          title= "Token3"
+          title= "Token 3"
+          to= "/tokens/token3"
           description= "Project in line to be loaded into the Rocketpad"
           swapRate= "1 USDT = 2010.405 METAV"
           cap= "10000"
@@ -35,11 +38,12 @@ const Article = () => {
           participants= "351"
           />
           <Card 
-          title= "Token4"
+          title= "Token 4"
+          to= "/tokens/token4"
           description= "Project in line to be loaded into the Rocketpad"
           swapRate= "1 USDT = 2010.405 METAV"
           cap= "10000"
-          access= "Private"
+          access= "Public"
           participants= "351"
           />
         </div>

@@ -1,0 +1,144 @@
+.tokenpage-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px 0 12%;
+        .ptoken-info{
+            .ptoken-container{
+                margin: 20px 0;
+                display: flex;
+                flex-direction: row;
+                .ptoken_icon-box{
+            width: 70px;
+            height: 70px;
+            padding: 12px;
+            margin-right: 8px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 35px 20px;
+            &::before{
+            content: "";
+            background-image: url(../public/circle.png);
+            background-position: center center;
+            background-size: cover;
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            transform-origin: center center;
+            -webkit-animation: spin 6s infinite forwards linear;
+            animation: spin 6s infinite forwards linear;
+            }
+            
+            span{
+            object-fit: cover;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            overflow: hidden;
+            
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+            }
+                }
+
+                .ptoken_token-info{
+                    .ptoken-title{
+                        color: white;
+                        margin: 0 5px;
+                        // background-color: red;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 30px;
+                        padding-bottom: 0;
+                    }
+                    .ptoken_social-media{
+                        display: flex;
+                        font-size: 1em;
+                        flex-direction: row;
+                        margin: 15px 8px;
+                        .ptoken_socialMedia-btn{
+                        cursor: pointer;
+                        background: linear-gradient(45deg, #685dd8, #002A8F);
+                        border-radius: 100%;
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 5px;
+                        img{
+                            display: flex;
+                            width: 90%;
+                            height: 90%;
+                            padding:  5px 4px 4px 6px;
+                        }
+                        }
+                    }
+                    .ptoken_open-with{
+                        display: flex;
+                        flex-direction: row;
+                        font-size: 12px;
+                        padding: 5px 0;
+                        p:first-child{
+                            padding: 1px;
+                            border-radius: 8px;
+                            color: #ff0000;
+                            background-color: #5b1b28;
+                            text-align: center;
+                            margin: 0 5px;
+                            width: 100px;
+                        }
+                        p:nth-child(2){
+                            padding: 2px;
+                            border-radius: 8px;
+                            color: #d5a512;
+                            background-color: #594b2c;
+                            text-align: center;
+                            margin: 0 5px;
+                            width: 50px;
+                        }
+                    }
+                }
+        }
+        .ptoken_token-btns{
+            .ptoken_desc{
+                font-size: 15px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #6c757d;
+            }
+            .ptoken_btns{
+                .ptoken-btn{
+                    cursor: pointer;
+                    font-weight: 400;
+                    text-align: center;
+                    font-family: Helvetica, sans-serif;
+                    padding: 10px 16px;
+                    border-radius: 10px;
+                    letter-spacing: 0.5px;
+                    width: auto;
+                    box-shadow: none;
+                    background: linear-gradient(to right, #d80cf1, #f00b40);
+                    border: 1px #685dd8 solid;
+                    color: #fff;
+                    margin: 10px 5px;
+                    transition: all 500ms;
+                    &:hover{
+                        background: #212e48;
+                        border-color: #685dd8;
+                    }
+                }
+            }
+
+        }
+    }
+}

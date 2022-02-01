@@ -1,6 +1,7 @@
 import React from 'react';
+import Link from 'next/link'
 
-const Card = ({ title, description, swapRate, cap, access, participants }) => {
+const Card = ({ title, to, description, swapRate, cap, access, participants }) => {
     return (
         <div className="card">
             <div className="card_top-container">
@@ -13,7 +14,7 @@ const Card = ({ title, description, swapRate, cap, access, participants }) => {
                 </div>
 
                 <div className='card_info-container'>
-                    <h2>{title}</h2>
+                    <a className="card-title" href={to} className="title">{title}</a>
                     <div className="social-media">
                         {/* <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/1024px-Instagram_font_awesome.svg.png" alt="" width="14px" height="14px"/></button> */}
                         <a className="socialMedia-btn"><img src='/instagram.svg' alt=""/></a>
@@ -22,8 +23,8 @@ const Card = ({ title, description, swapRate, cap, access, participants }) => {
                         <a className="socialMedia-btn"><img src="/codepen.svg" alt=""/></a>
                     </div>
                     <div className="open-with">
-                    <a href="#"> <b className="item-open">⚬</b> Opens in TDA</a>
-                    <a href="#">ADA</a>
+                    <p href="#"> <b className="item-open">⚬</b> Opens in TDA</p>
+                    <p href="#">ADA</p>
                     </div>
                 </div>
             </div>
