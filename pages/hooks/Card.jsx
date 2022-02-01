@@ -14,7 +14,7 @@ const Card = ({ title, to, description, swapRate, cap, access, participants }) =
                 </div>
 
                 <div className='card_info-container'>
-                    <a className="card-title" href={to} className="title">{title}</a>
+                    <a className="card-title" href={to}>{title}</a>
                     <div className="social-media">
                         {/* <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/1024px-Instagram_font_awesome.svg.png" alt="" width="14px" height="14px"/></button> */}
                         <a className="socialMedia-btn"><img src='/instagram.svg' alt=""/></a>
@@ -54,5 +54,4 @@ const Card = ({ title, to, description, swapRate, cap, access, participants }) =
 
     )
 };
-
 export default Card;

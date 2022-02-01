@@ -2,7 +2,7 @@ import React from 'react';
 import Tiercard from '../hooks/Tiercard.jsx'
 const Tiers = () => {
   return (
-    <section class="tiersystem-main_container">
+    <section className="tiersystem-main_container">
         <article className="tiers-container">
             <Tiercard
             image="/knight.png"
