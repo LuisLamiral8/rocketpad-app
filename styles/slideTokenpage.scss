@@ -137,3 +137,40 @@
 .tab-active{
     display: flex;
 }
+
+@media (max-width: 900px){
+    .project-details-container{
+        flex-direction: column;
+        height: 100%;
+        .pool-info-container, .token-info-container{
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            margin: 10px 0;
+            .secure25{
+                padding: 10px 150px 10px 25px;
+            }
+            .portable-fire{
+                padding: 10px 150px 10px 25px;
+
+            }
+        }
+    }
+    .allocation-container{
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+        .allocation-date-container{
+            width: 80%;
+            margin: 30px auto;
+        }
+        .addMetamask-btn{
+            width: 80%;
+            margin: 15px auto;
+            height: 50px;
+            .addMetamask-div{
+                justify-content: center;
+            }
+        }
+    }
+}

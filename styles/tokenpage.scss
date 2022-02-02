@@ -1,9 +1,9 @@
 .tokenpage-header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0px 0px 0 12%;
-        .ptoken-info{
+    .ptoken-info{
             .ptoken-container{
                 margin: 20px 0;
                 display: flex;
@@ -140,5 +140,14 @@
             }
 
         }
+    }
+}
+
+@media (max-width: 900px){
+    .tokenpage-header{
+        margin-bottom: 50px;
+    }
+    .img-container{
+        display: none;
     }
 }
