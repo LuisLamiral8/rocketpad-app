@@ -16,7 +16,9 @@ export default function Home() {
       <Navigation 
       current="Token 1"
       />
-      <TokenPage/>
+      <TokenPage
+      name="Token 1"
+      />
       <Footer/>
       <Snow/>
     </div>

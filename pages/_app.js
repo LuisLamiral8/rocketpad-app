@@ -8,6 +8,7 @@ import '../styles/tiersystem.scss'
 import '../styles/tiers.scss'
 import '../styles/snow.scss'
 import '../styles/tokenpage.scss'
+import '../styles/slideTokenpage.scss'
 
 import { ChakraProvider} from "@chakra-ui/react"
 import { StoreProvider } from 'easy-peasy';

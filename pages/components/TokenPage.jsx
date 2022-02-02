@@ -1,6 +1,6 @@
 import React from 'react';
-
-const TokenPage = () => {
+import SlideTokenpage from '../hooks/SlideTokenpage'
+const TokenPage = ({name}) => {
     return (
         <article>
             <div className="tokenpage-header">
@@ -15,7 +15,7 @@ const TokenPage = () => {
                         </div>
                     </div>
                     <div className="ptoken_token-info">
-                        <p className="ptoken-title">Token 1</p>
+                        <p className="ptoken-title">{name}</p>
                         <div className="ptoken_social-media">
                             <a className="ptoken_socialMedia-btn"><img src='/instagram.svg' alt=""/></a>
                             <a className="ptoken_socialMedia-btn"><img src="/twitter.svg" alt=""/></a>
@@ -41,6 +41,7 @@ const TokenPage = () => {
                     <img src="/bg1.png" alt="" width="500px" height="325px" />
                 </div>
             </div>
+            <SlideTokenpage/>
         </article>
     )
 };
