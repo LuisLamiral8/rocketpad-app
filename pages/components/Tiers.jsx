@@ -1,5 +1,6 @@
 import React from 'react';
 import Tiercard from '../hooks/Tiercard.jsx'
+import Cursor from './Cursor.jsx'
 const Tiers = () => {
   return (
     <section className="tiersystem-main_container">
@@ -39,6 +40,7 @@ const Tiers = () => {
             minimum="1,250,000"
             maximum="6,250,000"
             />
+            <Cursor/>
         </article>
         <article className="advise">
             <p>Users need to Buy and Stake atleast the minimum amount designated for their desired Allocation Tier before the IDO Snapshot is taken.</p>

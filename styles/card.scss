@@ -1,30 +1,46 @@
 .card{ 
-    z-index: 100;
-    background-color: #242435;
+    padding: 20px;
     border-radius: 10px;
-    width:100%;
+    background: #242435;
     height:339px;
+    position: relative;
+    z-index: 5;
     display: flex;
     flex-direction: column;
     align-items:space-around;
-    justify-content: space-around;
+    justify-content: space-around; 
 
-    &:before{
+    &::before {
       content: "";
       position: absolute;
       top: auto;
       bottom: 0;
       left: 0;
       border-radius: 15px;
-      background-image: linear-gradient(100deg #13131d, #0398ed);
+      background-image: linear-gradient(100deg, #13131d, #0398ed);
       background-repeat: repeat-x;
       -webkit-transition: all .5s;
       transition: all .5s;
       width: 100%;
       height: 100%;
-      z-index: -2;
+      z-index: -2; 
     }
 
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #242435;
+      position: absolute;
+      border-radius: 10px;
+      z-index: -1; 
+    }
+
+    &:hover::before {
+      transform: rotate(2deg) translateX(-7px) translateY(11px); 
+    }
     // &:after{
     //   content: "";
     //   width: 100%;
@@ -85,18 +101,18 @@
         }
       }
       .card_info-container{
-          a{
-            color: white;
+          .card-title{
             margin: 0 5px;
             text-decoration: none;
-            color: white;
             font-size: 30px;
             padding-bottom: 0;
-             background-image: linear-gradient(#00F260, #c42bdd, #0575e6, #fff);
+            background-image: linear-gradient(to right, #00F260, #c42bdd, #0575e6, #00F260);
+            color:transparent;
+            -webkit-background-clip:text;
             background-size: 150%;
             background-position: -200%;
-            animation: animationText 5s infinite alternate-reverse;
-           // background-clip:text;
+            animation: animationText 2s infinite;
+            font-weight: bold;
             }
 
         .social-media{
@@ -293,6 +309,7 @@
     background-position-x:0rem;
   }
 }
+
 @keyframes animationText{
   to{
     background-position: 100%;
