@@ -15,7 +15,7 @@ const TokenPage = ({name}) => {
                         </div>
                     </div>
                     <div className="ptoken_token-info">
-                        <p className="ptoken-title">{name}</p>
+                        <p className="card-title ptoken-title">{name}</p>
                         <div className="ptoken_social-media">
                             <a className="ptoken_socialMedia-btn"><img src='/instagram.svg' alt=""/></a>
                             <a className="ptoken_socialMedia-btn"><img src="/twitter.svg" alt=""/></a>

@@ -55,13 +55,24 @@
 
                 .ptoken_token-info{
                     .ptoken-title{
-                        color: white;
+                        // color: white;
+                        // margin: 0 5px;
+                        // // background-color: red;
+                        // text-decoration: none;
+                        // color: white;
+                        // font-size: 30px;
+                        // padding-bottom: 0;
                         margin: 0 5px;
-                        // background-color: red;
                         text-decoration: none;
-                        color: white;
                         font-size: 30px;
                         padding-bottom: 0;
+                        background-image: linear-gradient(to right, #00F260, #c42bdd, #0575e6, #00F260);
+                        color:transparent;
+                        -webkit-background-clip:text;
+                        background-size: 150%;
+                        background-position: -200%;
+                        animation: animationText 2s infinite;
+                        font-weight: bold;
                     }
                     .ptoken_social-media{
                         display: flex;
