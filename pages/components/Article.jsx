@@ -55,7 +55,7 @@ const Article = () => {
           <button className="page2" >2</button>
           <button className="page3">3</button>
           <button className="next">Next</button>
-          </div>
+        </div>
         </div>
      </article>
     )

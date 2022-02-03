@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
-
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faInstagram, faTwitter, faLinkedinIn, faCodepen  } from '@fortawesome/free-brands-svg-icons'
 const Card = ({ title, to, description, swapRate, cap, access, participants }) => {
     return (
         <div className="card">
@@ -17,10 +18,10 @@ const Card = ({ title, to, description, swapRate, cap, access, participants }) =
                     <a className="card-title" href={to}>{title}</a>
                     <div className="social-media">
                         {/* <button><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Instagram_font_awesome.svg/1024px-Instagram_font_awesome.svg.png" alt="" width="14px" height="14px"/></button> */}
-                        <a className="socialMedia-btn"><img src='/instagram.svg' alt=""/></a>
-                        <a className="socialMedia-btn"><img src="/twitter.svg" alt=""/></a>
-                        <a className="socialMedia-btn"><img src="/linkedin.svg" alt=""/></a>
-                        <a className="socialMedia-btn"><img src="/codepen.svg" alt=""/></a>
+                        <a className="socialMedia-btn"><FontAwesomeIcon className="img" icon={faInstagram}/></a>
+                        <a className="socialMedia-btn"><FontAwesomeIcon className="img" icon={faTwitter}/></a>
+                        <a className="socialMedia-btn"><FontAwesomeIcon className="img" icon={faLinkedinIn}/></a>
+                        <a className="socialMedia-btn"><FontAwesomeIcon className="img" icon={faCodepen}/></a>
                     </div>
                     <div className="open-with">
                     <p href="#"> <b className="item-open">⚬</b> Opens in TDA</p>

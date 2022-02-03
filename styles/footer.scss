@@ -39,9 +39,12 @@
             transform: rotate(-45deg);
             width: 30px;
             height: 30px;
-            img{
+            .footer-img{
+                color: #ffff;
+                width: 90%;
+                height: 90%;
+                padding:  5px 4px 4px 6px;
                 transform: rotate(45deg);
-                // margin: -2px -2px -2px -2px;
                 
             }
         }

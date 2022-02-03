@@ -1,5 +1,7 @@
 import React from 'react';
 import SlideTokenpage from '../hooks/SlideTokenpage'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faInstagram, faTwitter, faLinkedinIn, faCodepen  } from '@fortawesome/free-brands-svg-icons'
 const TokenPage = ({name}) => {
     return (
         <article>
@@ -17,10 +19,10 @@ const TokenPage = ({name}) => {
                     <div className="ptoken_token-info">
                         <p className="card-title ptoken-title">{name}</p>
                         <div className="ptoken_social-media">
-                            <a className="ptoken_socialMedia-btn"><img src='/instagram.svg' alt=""/></a>
-                            <a className="ptoken_socialMedia-btn"><img src="/twitter.svg" alt=""/></a>
-                            <a className="ptoken_socialMedia-btn"><img src="/linkedin.svg" alt=""/></a>
-                            <a className="ptoken_socialMedia-btn"><img src="/codepen.svg" alt=""/></a>
+                            <a className="ptoken_socialMedia-btn"><FontAwesomeIcon className="tokenpage-img" icon={faInstagram}/></a>
+                            <a className="ptoken_socialMedia-btn"><FontAwesomeIcon className="tokenpage-img" icon={faTwitter}/></a>
+                            <a className="ptoken_socialMedia-btn"><FontAwesomeIcon className="tokenpage-img" icon={faLinkedinIn}/></a>
+                            <a className="ptoken_socialMedia-btn"><FontAwesomeIcon className="tokenpage-img" icon={faCodepen}/></a>
                         </div>
                         <div className="ptoken_open-with">
                             <p href="#"> <b className="item-open">⚬</b> Opens in TDA</p>
