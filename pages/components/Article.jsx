@@ -51,9 +51,9 @@ const Article = () => {
           <div className="pagination-buttons">
 
           <button className="previous">Previous</button>
-          <button className="page-active">1</button>
-          <button>2</button>
-          <button>3</button>
+          <button className="page1">1</button>
+          <button className="page2" >2</button>
+          <button className="page3">3</button>
           <button className="next">Next</button>
           </div>
         </div>

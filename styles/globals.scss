@@ -190,5 +190,22 @@ body{
     }
   }
     
-
+@media (max-width:380px){
+  .card-pagination{
+    .pagination-buttons{
+      .page1{
+        display: none !important;
+      }
+      .page2{
+        display: none !important;
+      }
+      .page3{
+        display: none !important;
+      }
+      .next{
+        background-color: #685dd8 !important;
+      }
+    }
+  }
+}
 
