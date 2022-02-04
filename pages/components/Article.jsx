@@ -22,8 +22,8 @@ const Article = () => {
           title= "Token 2"
           to= "/tokens/token2"
           description= "Project in line to be loaded into the Rocketpad"
-          swapRate= "1 USDT = 2010.405 METAV"
-          cap= "10000"
+          swapRate= "1 USDT = 1010.101 CLH"
+          cap= "40000"
           access= "Public"
           participants= "351"
           />
@@ -32,8 +32,8 @@ const Article = () => {
           title= "Token 3"
           to= "/tokens/token3"
           description= "Project in line to be loaded into the Rocketpad"
-          swapRate= "1 USDT = 2010.405 METAV"
-          cap= "10000"
+          swapRate= "1 USDT = 980.201 TKM"
+          cap= "30000"
           access= "Private"
           participants= "241"
           />
@@ -41,8 +41,8 @@ const Article = () => {
           title= "Token 4"
           to= "/tokens/token4"
           description= "Project in line to be loaded into the Rocketpad"
-          swapRate= "1 USDT = 2010.405 METAV"
-          cap= "10000"
+          swapRate= "1 USDT = 1560.589 PQB"
+          cap= "20000"
           access= "Public"
           participants= "389"
           />
