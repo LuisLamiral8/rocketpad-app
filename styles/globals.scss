@@ -84,7 +84,7 @@ body{
       background-color: transparent;
       border: 1px solid #2f3550;
       border-radius: 15px;
-      font-weight:600;
+      font-weight:500;
       color:white;
       padding-left:55px;
       background-image:url(../public/searchicon.png);
@@ -92,9 +92,9 @@ body{
       background-repeat: no-repeat;
     }
     input::placeholder{
-      color: #f0f5ff;
+      color: #c8cdd6;
 
-      font-weight:600;
+      font-weight:500;
       // background: url("/searchicon.png") no-repeat scroll 00px 0px;
 
 

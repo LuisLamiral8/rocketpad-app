@@ -1,16 +1,34 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Card from './../hooks/Card'
 
 const Article = () => {
+
+  const [search, setSearch] = useState('');
+  let [card, setCard] = useState([]);
+  const handleChange=e=> {
+    setSearch(e.target.value);
+    console.log("Busqueda: ", e.target.value);
+  }
+
+  const filter = (e) => {
+    let cardFilter = card.filter(card => {
+      return card.title.toLowerCase().includes(search.toLowerCase());
+    });
+    setCard(cardFilter);
+
+    return cardFilter;
+  }
+
   return(
       <article className='cards'>
         <div className="input-container">
-        <input id="search-btn" type="text" placeholder='Project name' />
+        <input id="search-btn" value={search} onChange={handleChange} type="text" placeholder='Project name' />
         </div>
           
         <div className="cards-container">
+
           <Card 
-          title= "Token 1"
+          title= {setCard = "Token 1"}
           to= "/tokens/token1"
           description= "Project in line to be loaded into the Rocketpad"
           swapRate= "1 USDT = 2010.405 METAV"
@@ -18,6 +36,7 @@ const Article = () => {
           access= "Private"
           participants= "351"
           />
+
           <Card 
           title= "Token 2"
           to= "/tokens/token2"
