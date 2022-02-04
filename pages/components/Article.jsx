@@ -57,6 +57,7 @@ const Article = () => {
           <button className="next">Next</button>
         </div>
         </div>
+
      </article>
     )
 };
