@@ -35,7 +35,7 @@ const Article = () => {
           swapRate= "1 USDT = 2010.405 METAV"
           cap= "10000"
           access= "Private"
-          participants= "351"
+          participants= "241"
           />
           <Card 
           title= "Token 4"
@@ -44,7 +44,7 @@ const Article = () => {
           swapRate= "1 USDT = 2010.405 METAV"
           cap= "10000"
           access= "Public"
-          participants= "351"
+          participants= "389"
           />
         </div>
         <div className="card-pagination">

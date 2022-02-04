@@ -35,14 +35,14 @@ const ConnectWallet = (props) => {
     }, [connected]);
 
     const checkConnection = async () => {
-        if (window.cardano && (await window.cardano.isEnabled())) {
-            const session = localStorage.getItem('session');
-            if (Date.now() - parseInt(session) < 6000000) {
-                // 1h
-                const address = await addressToBech32();
-                setConnected(address);
-            }
-        }
+        // if (window.cardano && (await window.cardano.isEnabled())) {
+        //     const session = localStorage.getItem('session');
+        //     if (Date.now() - parseInt(session) < 6000000) {
+        //         // 1h
+        //         const address = await addressToBech32();
+        //         setConnected(address);
+        //     }
+        // }
     };
 
     useEffect(() => {
