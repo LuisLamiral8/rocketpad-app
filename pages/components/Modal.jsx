@@ -1,6 +1,14 @@
 import React from 'react';
 import NamiConnect from '../hooks/NamiConnect';
 const Modal = () => {
+
+    let yoroiString = "Yoroi";
+
+    let yoroi = () => {
+        
+    }
+        
+
     return (
         <div className="modal-component">
             <input type="checkbox" id="btn-modal" />
@@ -14,16 +22,16 @@ const Modal = () => {
                         </div>
                         <div className="connect-btns">
                             <button className="connect-button"><div>
-                                <p>Yoroi</p>
+                                <p onClick={() => alert("Coming soon")}>{yoroiString}</p>
                                 <img width="30px" height="30px" src="https://app.rocketpad.community/images/wallet/yoroi.jpeg" alt="" />
                             </div></button>
                             <button className="connect-button"><div>
-                                <p>Deadalus</p>
+                                <p onClick={() => alert("Coming soon")}>Deadalus</p>
                                 <img width="30px" height="30px" src="https://app.rocketpad.community/images/wallet/deadalus.png" alt="" />
                             </div></button>
                             <div className="nami-connect">
                                 <NamiConnect />
-                                <img width="30px" height="30px" src="https://app.rocketpad.community/images/wallet/nami.jpeg" alt="" />
+                                <img width="30px" height="30px" src="./cardano.png" alt="" />
                             </div>
 
                         </div>

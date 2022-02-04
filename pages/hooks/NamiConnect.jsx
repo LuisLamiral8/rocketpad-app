@@ -21,6 +21,7 @@ const ConnectWallet = (props) => {
     const setConnected = useStoreActions(
         (actions) => actions.connection.setConnected
     );
+
     const toast = useToast();
 
     useEffect(() => {
@@ -51,7 +52,7 @@ const ConnectWallet = (props) => {
     return connected
         ? (
             <div
-                onClick={() => router.push(`/address/${connected}`)}
+                onClick={() => router.push(`/`)}
             >
                 <Ellipsis connected={connected} />
             </div>
@@ -75,7 +76,7 @@ const ConnectWallet = (props) => {
                     setIsLoading(false);
                 }}
             >
-                <button className="button-nami_wallet">Connect Nami Wallet</button>
+                <button className="button-nami_wallet">Nami Wallet</button>
             </Button>
         );
 };
@@ -99,7 +100,7 @@ const Ellipsis = ({ connected }) => {
                 }}
             >
                 <MiddleEllipsis>
-                    <span>{connected}</span>
+                    <span>Connected</span>
                 </MiddleEllipsis>
             </div>
 
@@ -133,7 +134,7 @@ const NoNami = (toast) => {
                 py={3}
                 rounded="3xl"
                 display="flex"
-                alignItems="center"
+                alignItems="space-around"
             >
                 <InfoIcon />
                 <Box ml="3" fontWeight="medium">
@@ -172,7 +173,7 @@ const WrongNetworkToast = async (toast) => {
                 py={3}
                 rounded="3xl"
                 display="flex"
-                alignItems="center"
+                alignItems="space-around"
             >
                 <InfoIcon />
                 <Box ml="3" fontWeight="medium">

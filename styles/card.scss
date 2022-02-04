@@ -116,10 +116,11 @@
             }
 
         .social-media{
-          display: flex;
           font-size: 1em;
           flex-direction: row;
           margin: 15px 8px;
+          display: flex;
+
           .socialMedia-btn{
             cursor: pointer;
             background: linear-gradient(45deg, #685dd8, #002A8F);
@@ -127,9 +128,42 @@
             width: 30px;
             height: 30px;
             margin: 0 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position:relative;
+
+            &:before {
+              content: "";
+              transform: scale(1);
+              width: 30px;
+              height: 30px;
+              border-radius: 100%;
+              display: block;
+              background: linear-gradient(45deg, #685dd8, #002A8F);
+              transition: all 265ms ease-out;
+
+              
+            }
+
+            &:hover:before {
+              transform: scale(0);
+              transition: all 265ms ease-in;
+            }
+
+            :hover .img{
+              transform: scale(2.2);
+              -ms-transform: scale(2.2);
+              -webkit-transform: scale(2.2);
+              color: #685dd8;
+              background: -webkit-linear-gradient(45deg, #00B5F5, #002A8F);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              transition: all 265ms ease-in;
+            }
             .img{
-              width: 90%;
-              height: 90%;
+              width: 27px;
+              height: 27px;
               padding:  5px 4px 4px 6px;
             }
           }

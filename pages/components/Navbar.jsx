@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link'
 // const ham= document.querySelector(".ham");
 
+import connected from '../hooks/NamiConnect';
+
 const Navbar = () => {
   if (typeof window !== 'undefined') {
     const ul = document.querySelector(".ul");
@@ -10,7 +12,7 @@ const Navbar = () => {
     //navActive
     //bars
 
-    
+    console.log(connected);
     const responsiveNav = () => {
       ul.classList.toggle("navActive");
       bars.forEach(child => { child.classList.toggle('animated') });

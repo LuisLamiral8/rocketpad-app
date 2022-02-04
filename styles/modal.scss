@@ -65,12 +65,19 @@
                 .nami-connect{
                     display:flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: space-between;
                     width:90%;
                     height: 50px;
                     background-color: #0d086a;
                     border-radius: 1rem;
                     margin: 5px 0;
+
+                    span{
+                        color: white;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-left: 23px;
+                    }
                     img{
                         margin-right: 10px;
                     }
