@@ -76,7 +76,7 @@ const Article = () => {
           
         <div className="cards-container">
           {Card ? card.map((el)=>(
-            <Card
+            <Card key="abcd2"
               title={el.title}
               to= {el.to}
               description={el.description} 
